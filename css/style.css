@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap");
+
+:root {
+  --transition: all 0.7s ease;
+  --yellow: #f9d342;
+  --dark: #292826;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Playfair Display", serif;
+  text-align: center;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  line-height: 1.6;
+}
+.btn {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  width: 140px;
+  display: block;
+  margin: 15px auto;
+  cursor: pointer;
+  transition: var(--transition);
+}
+.btn:hover {
+  opacity: 0.85;
+}
+
+.navbar {
+  background: none;
+  float: right;
+  font-size: 1.125em;
+  margin-right: 5%;
+  text-align: right;
+  width: 35%;
+}
+
+/* this is to float your logo ( if you have it ) to the right */
+#logo {
+  float: left;
+  margin-left: 5%;
+  text-align: left;
+  width: 45%;
+}
