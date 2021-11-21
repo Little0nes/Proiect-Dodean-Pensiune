@@ -18,11 +18,22 @@ html {
 body {
   line-height: 1.6;
 }
+
+.navbar {
+  background: none;
+  float: right;
+  font-size: 1.125em;
+  margin-right: 30%;
+  text-align: right;
+  width: 35%;
+  margin-top: 8vh;
+}
+
 .btn {
   font-size: 16px;
   text-transform: uppercase;
   font-weight: 600;
-  border: none;
+  border: 1px solid blue;
   border-radius: 5px;
   padding: 10px;
   width: 140px;
@@ -34,20 +45,57 @@ body {
 .btn:hover {
   opacity: 0.85;
 }
-
-.navbar {
+.head-btn {
   background: none;
   float: right;
-  font-size: 1.125em;
-  margin-right: 5%;
-  text-align: right;
-  width: 35%;
+  font-size: 1.11em;
+  margin-right: 10%;
+  text-align: center;
+  width: 10%;
+}
+.book {
+  background-color: #fff;
+  margin-top: 30%;
+  border: none;
+  padding: 0%;
+}
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 8px 0;
+}
+.card-text,
+.card-title {
+  color: #292826;
+}
+img {
+  width: 100%;
+  display: block;
+}
+@media (max-width: 500px) {
+  body {
+    font-size: 14px;
+  }
 }
 
-/* this is to float your logo ( if you have it ) to the right */
-#logo {
-  float: left;
-  margin-left: 5%;
-  text-align: left;
-  width: 45%;
+/* header */
+.header {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)),
+    url("https://images.unsplash.com/photo-1590474154775-d0c66bc471e4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80")
+      center/cover no-repeat;
+  min-height: 100vh;
+  color: #fff;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
 }
